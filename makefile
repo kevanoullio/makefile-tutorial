@@ -7,6 +7,7 @@ CC = gcc
 CFLAGS = -Wall -pthread
 # -Wall: Enable all warnings.
 # -pthread: Enable POSIX thread support (enables use of multithreading).
+# -std=c11 Use the C11 standard. Not specifying a version will default to GNU11 for GCC 5.1 and later.
 DEP_FLAGS = -MMD -MP
 # -MMD: This flag tells the compiler to generate a .d file for each .c source file.
 # These .d files contain dependency information, listing all the header files (.h) that the source file includes.
